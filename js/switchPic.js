@@ -202,7 +202,6 @@ SwitchPic.prototype = {
 			var This = this;
 			var $Span = this.$switchPic.find('.focus_btn li span');
 			var w = this.$switchPic.find('.focus_btn li').width();
-			console.log(This.settings.playTime/w);
 			$Span.width(0);	
 			clearInterval(this.timing);
 			this.timing = setInterval(function(){
