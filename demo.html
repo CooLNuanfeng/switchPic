@@ -8,25 +8,45 @@
 <link href="css/switchPic.css" type="text/css" rel="stylesheet">
 <script src="js/jquery1.7.js"></script>
 <script src="js/switchPic.js"></script>
-
+<script>
+$(function(){
+	
+	$('#div1').switchPic({
+		id:'div1',
+		width:520,
+		height:364,
+		txts : true,
+		data:{
+			title :['','',''],
+			href:[],
+			src:['images/1.jpg','images/2.jpg','images/3.jpg'],
+			txt:['暗示大家哦哦','阿萨德开了房间看来','实得分时的']
+		},
+		btnTiming : true,
+		autoPlay:true,
+		playTime : 3000
+	})
+		
+})
+</script>
 </head>
 
 <body>
-<div class="box">
-	<div id="div1" class="focus_ui">
-    	<ul class="focus_pic">
-        	<li class="active"><a href="#" title=""><img src="images/1.jpg" width="520" height="364"></a><p>相关文字描述一</p></li>
-            <li><a href="#" title=""><img src="images/2.jpg"></a><p>相关文字描述二</p></li>
-            <li><a href="#" title=""><img src="images/3.jpg"></a><p>相关文字描述三</p></li>
-        </ul>
-        <ul class="focus_btn">
-        	<li class="active"><span></span></li>
-            <li><span></span></li>
-            <li><span></span></li>
-        </ul>
-        <div class="prev"></div>
-        <div class="next"></div>
-    </div>
+<div id="div1" class="box">
+	<!--<div class="focus_ui">
+            <ul class="focus_pic">
+                <li class="active"><a href="#" title=""><img src="images/1.jpg" width="520" height="364"></a><p>相关文字描述一</p></li>
+                <li><a href="#" title=""><img src="images/2.jpg"></a><p>相关文字描述二</p></li>
+                <li><a href="#" title=""><img src="images/3.jpg"></a><p>相关文字描述三</p></li>
+            </ul>
+            <ul class="focus_btn">
+                <li class="active"><span></span></li>
+                <li><span></span></li>
+                <li><span></span></li>
+            </ul>
+            <div class="prev"></div>
+            <div class="next"></div>
+       </div>-->
 </div>
 </body>
 </html>

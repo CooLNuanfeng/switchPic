@@ -1,20 +1,18 @@
 @charset "utf-8";
 /* CSS Document */
 
-.box{width:540px; height:416px; background:#09F; margin:0 auto}
+.box{width:520px; height:384px; padding:10px; background:#e5e5e5; border-radius:10px; margin:20px auto}
 
-#div1{margin:20px auto; width:520px; height:364px; padding:10px; border-radius:10px; background:#e5e5e5;}
-
-.focus_ui{position:relative;}
-.focus_ui .focus_pic{width:520px; height:364px; overflow:hidden}
-.focus_ui .focus_pic li{width:520px; height:364px; position:relative; left:0; top:0; display:none} 
+.focus_ui{position:relative; background:#e5e5e5;}
+.focus_ui .focus_pic{overflow:hidden}
+.focus_ui .focus_pic li{position:relative; left:0; top:0; display:none} 
 .focus_ui .focus_pic li.active{display:block;}
 .focus_ui .focus_pic li p{width:96%; height:auto; padding:10px 2%; font-family:"微软雅黑"; font-size:12px; color:#fff; position:absolute; bottom:0; left:0; background:rgba(51,51,51,0.8)}
 
-.focus_ui .focus_btn{width:120px; height:10px; position:absolute; bottom:-20px; left:50%; margin-left:-60px;}
+.focus_ui .focus_btn{height:10px; position:absolute; bottom:-20px; left:50%;}
 .focus_ui .focus_btn li{width:30px; height:10px; border-radius:3px; background:#fff; overflow:hidden; float:left; margin-right:10px; cursor:pointer}
-.focus_ui .focus_btn li span{width:100%; height:100%; background:#0CF; display:none;}
+.focus_ui .focus_btn li span{width:30px; height:10px; background:#0CF; display:none;}
 .focus_ui .focus_btn li.active span{display:block;}
 
 .prev{width:28px; height:46px; position:absolute; top:50%; margin-top:-23px; left:10px; background:url(../images/prev.png) no-repeat; cursor:pointer; z-index:99; display:none}
-.next{width:28px; height:46px; position:absolute; top:50%; margin-top:-23px; right:10px; background:url(../images/next.png) no-repeat; z-index:99; display:none}
+.next{width:28px; height:46px; position:absolute; top:50%; margin-top:-23px; right:10px; background:url(../images/next.png) no-repeat; z-index:99; cursor:pointer; display:none}
