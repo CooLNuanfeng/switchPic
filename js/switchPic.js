@@ -95,6 +95,7 @@ SwitchPic.prototype = {
 		
 		$Btn.click(function(){
 			This.iNow = $(this).index();
+			$Span.eq(This.iNow).width(w);
 			$Btn.removeClass('active');
 			$(this).addClass('active');
 			$Pic.removeClass('active');
@@ -104,6 +105,7 @@ SwitchPic.prototype = {
 		this.$switchPic.mouseover(function(){
 			clearInterval(This.timer);
 			clearInterval(This.timing);
+			$Span.eq(This.iNow).width(w);
 			This.$switchPic.find('.prev').show();
 			This.$switchPic.find('.next').show();
 		});
@@ -123,6 +125,7 @@ SwitchPic.prototype = {
 				},This.settings.playTime)
 			}
 			if(This.settings.btnTiming){
+				$Span.width(0);
 				This.timing = setInterval(function(){
 					$Span.eq(This.iNow).css({
 						width : '+=1'
@@ -152,6 +155,7 @@ SwitchPic.prototype = {
 			if(This.iNow>This.settings.counts-1){
 				This.iNow = 0;	
 			}
+			$Span.eq(This.iNow).width(w);
 			$Btn.removeClass('active');
 			$Btn.eq(This.iNow).addClass('active');
 			$Pic.removeClass('active');
@@ -163,6 +167,7 @@ SwitchPic.prototype = {
 			if(This.iNow<0){
 				This.iNow = This.settings.counts-1;
 			}
+			$Span.eq(This.iNow).width(w);
 			$Btn.removeClass('active');
 			$Btn.eq(This.iNow).addClass('active');
 			$Pic.removeClass('active');
